@@ -35,5 +35,9 @@ body{
     right: 50%;
 }
 @keyframes bater{
-    
+    0% {transform: rotate(45deg) scale(1); }
+    20% {transform: rotate(45deg) scale(1.4); }
+    40% {transform: rotate(45deg) scale(1); }
+    60% {transform: rotate(45deg) scale(1.4); }
+    80% {transform: rotate(45deg) scale(1); }
 }
