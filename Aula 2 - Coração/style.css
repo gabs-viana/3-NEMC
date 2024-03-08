@@ -1,0 +1,39 @@
+.coracao{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    transform: rotate(45deg) scale(1);
+    animation: bater 1s linear infinite;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.coracao::after{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    content: "";
+    position: absolute;
+    top: -50%;
+    border-radius: 50%;
+}
+
+.coracao::before{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    right: 50%;
+}
+@keyframes bater{
+    
+}
