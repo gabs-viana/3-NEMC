@@ -4,7 +4,7 @@ body{
 }
 
 span{
-    color: limegreen; /* Cor do texto */
+    color: fuchsia; /* Cor do texto */
 }
 
 .principal{
@@ -13,6 +13,29 @@ span{
     justify-content: center; /* Centraliza na horizontal. */
     align-items: center; /* Centraliza na vertical. */
     max-width: 1200px; /* Tamanho máximo da largura. */
-    width: 100%; /* Largura toal da tela. */
+    width: 100%; /* Largura total da tela. */
     margin: 0 auto; /* margens superior.inferior, direita.esquerda */
+}
+
+.conteudo{
+    color: fuchsia;
+}
+
+.botoes{
+    display: flex;
+    width: 100%;
+}
+
+.botao{
+    background: rgba(60, 60, 95, 0.7);
+    padding: 1rem;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    border-bottom: 4px solid fuchsia;
+    border-left: 2px solid rgba(60, 60, 95, 0.7);
+    border-right: 2px solid rgba(60, 60, 95, 0.7);
+    border-top: none;
 }
