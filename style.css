@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+}
+
+nav{
+    background:#23272a;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    height: 5rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    background-color: fuchsia;
+    color: aqua;
+}
+
+li:hover{
+    background-color: fuchsia;
+    color: aqua;
+}
+
+section{
+    min-height: 100vh;
+    padding-top: 5.5rem;
+    padding-left: 1.5rem;
+    color: #7289da;
+}
+
+#inicio{
+    background-color: #2c2f33;
+    color: aqua;
+}
+
+#cursos{
+    background-color: #2c2f33;
+    color: fuchsia;
+}
+
+#turnos{
+    background-color: #2c2f33;
+    
+}
+
+#turmas{
+    background-color: #2c2f33;
+}
+
+#contato{
+    background-color: #2c2f33;
+}
