@@ -1,0 +1,47 @@
+.coracao{
+    width: 100px;
+    height: 100px;
+    background: white;
+    position: relative;
+    transform: rotate(45deg) scale(1);
+    animation: bater 1s linear infinite;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vh;
+    overflow: hidden;
+    background: linear-gradient(black 0%, black 20%, #c22a1e 20%, #c22a1e 40%, #000000 40%, #000000 60%, #c22a1e 60%, #c22a1e 80%, black 80%, black 100%);
+    backdrop-filter: blur(10px);
+}
+
+.coracao::after{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    content: "";
+    position: absolute;
+    top: -50%;
+    border-radius: 50%;
+}
+
+.coracao::before{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    right: 50%;
+}
+@keyframes bater{
+    0% {transform: rotate(45deg) scale(1); }
+    20% {transform: rotate(45deg) scale(1.4); }
+    40% {transform: rotate(45deg) scale(1); }
+    60% {transform: rotate(45deg) scale(1.4); }
+    80% {transform: rotate(45deg) scale(1); }
+}
