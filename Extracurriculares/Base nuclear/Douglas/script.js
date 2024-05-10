@@ -1,7 +1,7 @@
 function sim() {
     alert("Meu Deus, baitolão...");
     // redireciona para um URL após clicar no SIM
-    location.href = "https://www.youtube.com/watch?v=8KNA6Jocncs";
+    location.href = "https://www.youtube.com/watch?v=E3REgu9_efE";
 }
 
 function desvia(btn) {
