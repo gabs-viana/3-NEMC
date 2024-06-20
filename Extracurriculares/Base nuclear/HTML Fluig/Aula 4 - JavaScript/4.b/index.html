@@ -35,13 +35,19 @@
         user-select: none;
     }
 
+    .divSwitch{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .switch--shadow + label{
         padding: 2px;
-        margin-left: 37.5rem;
         margin-bottom: 2rem;
-        width: 120px;
+        width: 150px;
         height: 60px;
-        background-color: #dddddd;
+        background: url(bgDark.png);
+        background-size: cover;
         border-radius: 60px;
     }
 
@@ -57,27 +63,30 @@
 
     .switch--shadow + label:before{
         right: 1px;
-        background: url(bgDark.png);
         background-size: cover;
         border-radius: 60px;
         transition: all 0.4s;
     }
 
-    .switch--shadow + label::after{
-        width: 62px;
-        background-color: #fff;
+    .switch--shadow + label:after{
+        width: 48px;
+        height: 48px;
+        margin: 9px 0 10px 9px;
+        background-color: white;
         border-radius: 100%;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         transition: all 0.4s;
     }
 
-    .switch--shadow:checked + label::before{
+    .switch--shadow:checked + label:before{
         background: url(bgLight.png);
         background-size: cover;
+        background-position: center;
     }
 
     .switch--shadow:checked + label:after{
-        transform: translateX(60px);
+        transform: translateX(86px);
+        background-color: yellow;
     }
 </style>
 <body>
@@ -85,8 +94,10 @@
         <h1>Modo Dark and Light</h1>
         <p id="demo">Funfando</p>
         <br> <br>
-        <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
-        <label for="switch-shadow"></label>
+        <div class="divSwitch">
+            <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+            <label for="switch-shadow"></label>
+        </div>
         <button onclick="mudarFundo()">Mudar Cor</button>
         <br>
         <br>
