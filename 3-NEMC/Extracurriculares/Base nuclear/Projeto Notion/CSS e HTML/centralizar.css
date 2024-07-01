@@ -1,0 +1,19 @@
+
+
+/* o H1 foi centralizado */
+h1{
+    text-align: center;
+}
+
+/*Div centralizada com Flex*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/*Div centralizada com Grid*/
+.container{
+    display: grid;
+    display-items: center;
+}
