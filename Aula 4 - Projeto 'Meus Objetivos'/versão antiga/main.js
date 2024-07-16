@@ -47,4 +47,9 @@ function atualizaCronometro() {
     }
 }
 
-setInterval(atualizaCronometro, 1000);
+function comecaCronometro() {
+    atualizaCronometro();
+    requestAnimationFrame(comecaCronometro);
+}
+
+comecaCronometro();
