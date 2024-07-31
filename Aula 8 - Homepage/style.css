@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+h1{
+    color: fuchsia;
+    text-align: center;
+}
+
+button{
+    background: yellowgreen;
+    width: 4rem;
+    height: 2.5rem;
+    margin: 5px;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
