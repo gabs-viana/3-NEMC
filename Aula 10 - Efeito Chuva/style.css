@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(imgs/Londrina.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.chuva{
+    height: 100vh;
+    background: url(imgs/chuva.png);
+    animation: chover .5s linear infinite;
+}
+
+@keyframes chover{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 20% 100%;
+    }
+}
+
+.chuva::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    animation: raio 5s linear infinite;
+    opacity: 0;
+}
+
+@keyframes raio{
+    0%{opacity: 0;}
+    10%{opacity: 0;}
+    11%{opacity: 0.5;}
+    14%{opacity: 0;}
+    21%{opacity: 0.5;}
+    24%{opacity: 0;}
+    30%{opacity: 0;}
+    50%{opacity: 0;}
+    55%{opacity: 1;}
+    57%{opacity: 0.5;}
+    65%{opacity: 0;}
+    70%{opacity: 0;}
+    85%{opacity: 0.5;}
+    100%{opacity: 0;}
+    
+}
