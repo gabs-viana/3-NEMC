@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #848484;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 150px 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.btn1{
+    transition: 0.5s;
+    color: white;
+    background-color: #25d366;
+    box-shadow: 2px 2 px 3px #25d366;
+}
+
+.btn1:hover{
+    animation: botao1 .5s linear;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    background-color: white;
+    color: #25d366;
+}
+
+.btn2{
+    transition: 0.5s;
+    color: white;
+    background-color: #171515;
+    box-shadow: 2px 2 px 3px #171515;
+}
+
+.btn2:hover{
+    animation: botao1 .5s linear;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    background-color: white;
+    color: #171515;
+}
+
+.btn3{
+    transition: 0.5s;
+    color: white;
+    background-color: #E1306C;
+    box-shadow: 2px 2 px 3px #C13584;
+}
+
+.btn3:hover{
+    animation: botao1 .5s linear;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    background-color: white;
+    color: #C13584;
+}
+
+
+/* @keyframes botao1{
+    0%{ font-size: 24px;}
+    100%{ font-size: 16px;}
+} */
+
