@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#btn1").click(function(){
+                $("#1").append(" <b>Appended text</b>.");
+            });
+
+            $("#btn2").click(function(){
+                // Verifica se o input já existe
+                if (!$('#inputItem').length) {
+                    // Se não existir, cria um input e um botão de confirmação
+                    $("<input>", {
+                        id: "inputItem",
+                        type: "text",
+                        placeholder: "Digite o texto do item"
+                    }).insertAfter("#btn2");
+
+                    $("<button>", {
+                        id: "confirmBtn",
+                        text: "Adicionar Item"
+                    }).insertAfter("#inputItem");
+                }
+
+                // Adiciona o evento de clique ao botão de confirmação
+                $(document).on('click', '#confirmBtn', function() {
+                    var itemText = $("#inputItem").val();
+                    if(itemText) {
+                        $("ol").append("<li>" + itemText + "</li>");
+                        // Limpa o input
+                        $("#inputItem").val("");
+                    }
+                });
+            });
+
+            $("p").on({
+                mouseenter: function(){
+                    $(this).css("background-color", "fuchsia");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "purple");
+                },
+                click: function(){
+                    $(this).css("background-color", "green");
+                }
+            });
+
+            $("#shower").click(function(){
+                $("#outro").hide();
+            });
+            $("#2").click(function(){
+                $("#outro").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Escondendo e mostrando texto -->
+    <h2>Titulo</h2>
+    <p>Texto</p>
+    <p id="outro">Outro texto</p>
+    <button id="shower">Clique aqui</button>
+    <button id="2">Clique aqui</button>
+
+    <!-- Dicas -->
+    <p>
+    $(this).hide() - hides the current element. <br>
+
+    $("p").hide() - hides all p elements. <br>
+
+    $(".test").hide() - hides all elements with class="test" <br>
+
+    $("#test").hide() - hides the element whit id="test".
+    </p>
+
+    <p id="1">This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+
+    <!-- Appendando texto e lista -->
+    <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ol>
+    <button id="btn1">Append text</button>
+    <button id="btn2">Append list items</button>
+
+</body>
+</html>
