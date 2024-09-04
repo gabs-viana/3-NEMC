@@ -21,13 +21,19 @@ header a{
     margin: 150px 30px;
     border: 1px solid white;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn1{
+    width: 6rem;
+    height: 7rem;
     transition: 0.5s;
     color: white;
     background-color: #25d366;
     box-shadow: 2px 2 px 3px #25d366;
+    
 }
 
 .btn1:hover{
