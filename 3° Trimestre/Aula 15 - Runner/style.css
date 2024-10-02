@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    background: url(imagens/parque.png) no-repeat;
+    background-size: cover;
+}
+
+.corredor{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    background: url(imagens/mega.png);
+    overflow: hidden;
+    width: calc(1591px / 10);
+    height: 157px;
+    animation: correr 1s steps(10) infinite, mover 8s linear infinite;
+}
+
+.corredor1{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    background: url(imagens/correr1.png);
+    overflow: hidden;
+    width: calc(800px / 10);
+    height: 99px;
+    animation: correr1 1s steps(10) infinite, mover1 8s linear infinite; 
+}
+
+
+@keyframes correr{
+    0% {background-position: 0px;}
+    100% {background-position: -1591px;}
+}
+
+@keyframes mover{
+    0% {transform: translateX(-100px);}
+    100% {transform: translateX(1200px);}
+}
+
+@keyframes correr1{
+    0% {background-position: 0px;}
+    100% {background-position: -1591px;}
+}
+
+@keyframes mover1{
+    0% {transform: translateX(-100px);}
+    100% {transform: translateX(1200px);}
+}
+
+.titulo{
+    top: 200px;
+    left: 300px;
+    font-size: 40px;
+    position: fixed;
+    color: blue;
+    border: 2px solid red;
+    border-radius: 50px;
+    background-color: yellow;
+}
